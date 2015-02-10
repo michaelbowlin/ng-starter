@@ -9,6 +9,7 @@
 
         /* Feature areas */
         'app.customers',
+        'app.customers1',
         'app.dashboard',
         'app.layout'
     ]);
