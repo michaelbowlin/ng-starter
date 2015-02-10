@@ -5,18 +5,18 @@
                 <div class="widget wblue">
                     <div ht-widget-header title="{{vm.title}}"></div>
                     <div class="widget-content user">
-                        <input ng-model="vm.filter" placeholder="Find customers1" type="search"/>
+                        <input ng-model="vm.filter" placeholder="Find formvalidations" type="search"/>
                         <table class="table table-condensed table-hover">
                             <thead>
                             <tr>
-                                <th>Customer1</th>
+                                <th>formvalidation</th>
                                 <th>City</th>
                                 <th>State</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="c in vm.customers1 | filter:vm.filter track by c.id"
-                                ng-click="vm.gotoCustomer1(c)">
+                            <tr ng-repeat="c in vm.formvalidations | filter:vm.filter track by c.id"
+                                ng-click="vm.gotoformvalidation(c)">
                                 <td>{{c.firstName + ' ' + c.lastName}}</td>
                                 <td>{{c.city}}</td>
                                 <td>{{c.state}}</td>

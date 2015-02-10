@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app.customers1')
+        .module('app.formvalidations')
         .run(appRun);
 
     /* @ngInject */
@@ -13,24 +13,24 @@
     function getStates() {
         return [
             {
-                state: 'customer1',
+                state: 'formvalidation',
                 config: {
                     absract: true,
                     template: '<ui-view class="shuffle-animation"/>',
-                    url: '/customer1'
+                    url: '/formvalidation'
                 }
             },
             {
-                state: 'customer1.list',
+                state: 'formvalidation.list',
                 config: {
                     url: '/list',
-                    templateUrl: 'app/customers1/customers1.html',
-                    controller: 'Customers1',
+                    templateUrl: 'app/formvalidations/formvalidations.html',
+                    controller: 'formvalidations',
                     controllerAs: 'vm',
-                    title: 'Customers1',
+                    title: 'formvalidations',
                     settings: {
                         nav: 2,
-                        content: '<i class="fa fa-group"></i> Customers1'
+                        content: '<i class="fa fa-group"></i> formvalidations'
                     }
                 }
             }

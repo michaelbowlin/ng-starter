@@ -6,8 +6,8 @@ module.exports = function(app) {
 
     app.get(api + 'customer/:id', getCustomer);
     app.get(api + 'customers', getCustomers);
-    app.get(api + 'customer1/:id', getCustomer1);
-    app.get(api + 'customers1', getCustomers1);
+    app.get(api + 'formvalidation/:id', getformvalidation);
+    app.get(api + 'formvalidations', getformvalidations);
 
     app.get(api + '*', four0four.notFoundMiddleware);
 
@@ -44,16 +44,16 @@ module.exports = function(app) {
             four0four.send404(req, res, msg + ex.message);
         }
     }
-    function getCustomer1(req, res, next) {
+    function getformvalidation(req, res, next) {
         var id = req.params.id;
-        var msg = 'customer1 id ' + id + ' not found. ';
+        var msg = 'formvalidation id ' + id + ' not found. ';
         try {
             var json = jsonfileservice.getJsonFromFile(data + 'customers.json');
-            var customer1 = json.filter(function(c) {
+            var formvalidation = json.filter(function(c) {
                 return c.id === parseInt(id);
             });
-            if (customer1 && customer1[0]) {
-                res.send(customer1[0]);
+            if (formvalidation && formvalidation[0]) {
+                res.send(formvalidation[0]);
             } else {
                 four0four.send404(req, res, msg);
             }
@@ -63,8 +63,8 @@ module.exports = function(app) {
         }
     }
 
-    function getCustomers1(req, res, next) {
-        var msg = 'customers1 not found. ';
+    function getformvalidations(req, res, next) {
+        var msg = 'formvalidations not found. ';
         try {
             var json = jsonfileservice.getJsonFromFile(data + 'customers.json');
             if (json) {

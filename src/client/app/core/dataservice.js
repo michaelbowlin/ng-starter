@@ -13,8 +13,8 @@
         var service = {
             getCustomer: getCustomer,
             getCustomers: getCustomers,
-            getCustomer1: getCustomer1,
-            getCustomers1: getCustomers1,
+            getformvalidation: getformvalidation,
+            getformvalidations: getformvalidations,
             ready: ready
         };
 
@@ -46,28 +46,28 @@
             }
         }
 
-        function getCustomer1(id) {
-            return $http.get('/api/customer1/' + id)
-                .then(getCustomer1Complete)
+        function getformvalidation(id) {
+            return $http.get('/api/formvalidation/' + id)
+                .then(getformvalidationComplete)
                 .catch(function(message) {
-                    exception.catcher('XHR Failed for getCustomer1')(message);
+                    exception.catcher('XHR Failed for getformvalidation')(message);
                     $location.url('/');
                 });
 
-            function getCustomer1Complete(data, status, headers, config) {
+            function getformvalidationComplete(data, status, headers, config) {
                 return data.data;
             }
         }
 
-        function getCustomers1() {
-            return $http.get('/api/customers1')
-                .then(getCustomers1Complete)
+        function getformvalidations() {
+            return $http.get('/api/formvalidations')
+                .then(getformvalidationsComplete)
                 .catch(function(message) {
-                    exception.catcher('XHR Failed for getCustomers1')(message);
+                    exception.catcher('XHR Failed for getformvalidations')(message);
                     $location.url('/');
                 });
 
-            function getCustomers1Complete(data, status, headers, config) {
+            function getformvalidationsComplete(data, status, headers, config) {
                 return data.data;
             }
         }

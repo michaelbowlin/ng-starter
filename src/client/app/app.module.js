@@ -9,7 +9,7 @@
 
         /* Feature areas */
         'app.customers',
-        'app.customers1',
+        'app.formvalidations',
         'app.dashboard',
         'app.layout'
     ]);
