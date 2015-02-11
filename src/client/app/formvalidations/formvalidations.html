@@ -2,6 +2,12 @@
     <section class="matter">
         <div class="container">
             <div class="row">
+
+                   <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+                  <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
+ 
+
+
                 <div class="widget wblue">
                     <div ht-widget-header title="{{vm.title}}"></div>
                     <div class="widget-content user">

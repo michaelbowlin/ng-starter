@@ -10,7 +10,9 @@
         /* Feature areas */
         'app.customers',
         'app.formvalidations',
-        'app.layout'
+        'app.layout',
+        /* ng-starter additions */
+        'ui.bootstrap'
     ]);
 
 })();
