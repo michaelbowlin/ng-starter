@@ -10,7 +10,6 @@
         /* Feature areas */
         'app.customers',
         'app.formvalidations',
-        'app.dashboard',
         'app.layout'
     ]);
 
