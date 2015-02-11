@@ -1,19 +1,46 @@
-<div ng-controller="Shell as vm">
-    <header class="clearfix">
-        <ht-top-nav title="vm.title" tagline="vm.tagline"></ht-top-nav>
-    </header>
-    <section id="content" class="content">
-        <div ng-include="'app/layout/sidebar.html'"></div>
 
-        <div ui-view class="shuffle-animation"></div>
+    <div class="row">
+        <div class="col-xs-12">
 
-        <div ngplus-overlay
-             ngplus-overlay-delay-in="50"
-             ngplus-overlay-delay-out="700"
-             ngplus-overlay-animation="dissolve-animation">
-            <img src="images/busy.gif"/>
+                <div ng-controller="Shell as vm">
+                    
+                    <!-- Header inject -->
+                    <header class="clearfix">
+                        <ht-top-nav title="vm.title" tagline="vm.tagline"></ht-top-nav>
+                    </header>
 
-            <div class="page-spinner-message overlay-message">{{vm.busyMessage}}</div>
-        </div>
-    </section>
+                    <section id="content" class="content">
+
+                        <div class="row">                                                        
+                            <div class="col-xs-2">
+                                <!-- Sidebar inject -->
+                                <div ng-include="'app/layout/sidebar.html'"></div>
+                            </div>                            
+                            <div class="col-xs-10">
+                                <!-- Content inject -->
+                                <div ui-view></div>
+                            </div>
+                        </div>
+
+                        <!-- Loader inject -->
+                        <div ngplus-overlay
+                             ngplus-overlay-delay-in="50"
+                             ngplus-overlay-delay-out="700"
+                             ngplus-overlay-animation="dissolve-animation">
+                            <img src="images/busy.gif"/>
+
+                            <div class="page-spinner-message overlay-message">{{vm.busyMessage}}</div>
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+
+    </div>
 </div>
+
+
+ 
