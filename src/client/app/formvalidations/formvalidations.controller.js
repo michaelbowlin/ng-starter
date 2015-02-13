@@ -8,29 +8,20 @@
     /* @ngInject */
     function formvalidations($state, dataservice, logger) {
         var vm = this;
-        vm.formvalidations = [];
-        vm.gotoformvalidation = gotoformvalidation;
-        vm.title = 'formvalidations';
+        vm.validateCtrl = validateCtrl;
+        vm.title = 'Form Validations';
 
         activate();
 
         function activate() {
-            return getformvalidations().then(function () {
-                logger.info('Activated formvalidations View');
-            });
+
         }
 
-        function getformvalidations() {
-            return dataservice.getformvalidations().then(function (data) {
-                vm.formvalidations = data;
-                return vm.formvalidations;
-            });
+        function validateCtrl(){
+                vm.user = 'John Doe';
+                vm.email = 'john.doe@gmail.com';
+                vm.user2 = 'John Doe';
         }
 
-        function gotoformvalidation(c) {
-            $state.go('formvalidation.detail', {
-                id: c.id
-            });
-        }
     }
 })();

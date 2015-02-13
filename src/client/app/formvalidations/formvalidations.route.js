@@ -30,7 +30,7 @@
                     title: 'formvalidations',
                     settings: {
                         nav: 2,
-                        content: '<i class="fa fa-group"></i> formvalidations'
+                        content: '<i class="fa fa-group"></i> Form Validations'
                     }
                 }
             }
