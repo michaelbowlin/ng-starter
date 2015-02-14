@@ -30,7 +30,7 @@
                     title: 'Customers',
                     settings: {
                         nav: 2,
-                        content: '<i class="fa fa-group"></i> Customers'
+                        content: '<i class="secondary-nav fa fa-group"></i>'
                     }
                 }
             },

@@ -30,7 +30,7 @@
                     title: 'highcharts',
                     settings: {
                         nav: 2,
-                        content: '<i class="fa fa-group"></i> High Charts'
+                        content: '<i class="secondary-nav fa fa-pie-chart"></i>'
                     }
                 }
             }
