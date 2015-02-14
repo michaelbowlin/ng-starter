@@ -10,9 +10,13 @@
         /* Feature areas */
         'app.customers',
         'app.formvalidations',
+        'app.highcharts',
         'app.layout',
+        
         /* ng-starter additions */
+        'highcharts-ng',
         'ui.bootstrap'
+
     ]);
 
 })();

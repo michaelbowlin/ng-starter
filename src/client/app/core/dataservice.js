@@ -15,6 +15,7 @@
             getCustomers: getCustomers,
             getformvalidation: getformvalidation,
             getformvalidations: getformvalidations,
+            gethighcharts: gethighcharts,
             ready: ready
         };
 
@@ -42,6 +43,19 @@
                 });
 
             function getCustomersComplete(data, status, headers, config) {
+                return data.data;
+            }
+        }
+
+        function gethighcharts(id) {
+            return $http.get('/api/highcharts/' + id)
+                .then(gethighchartsComplete)
+                .catch(function(message) {
+                    exception.catcher('XHR Failed for getformvalidation')(message);
+                    $location.url('/');
+                });
+
+            function gethighchartsComplete(data, status, headers, config) {
                 return data.data;
             }
         }
