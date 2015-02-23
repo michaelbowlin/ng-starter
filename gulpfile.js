@@ -8,7 +8,6 @@ var sass = require('gulp-ruby-sass');
 var path = require('path');
 var _ = require('lodash');
 var $ = require('gulp-load-plugins')({lazy: true});
-
 var colors = $.util.colors;
 var envenv = $.util.env;
 var port = process.env.PORT || config.defaultPort;
