@@ -9,6 +9,7 @@
 
         /* Feature areas */
         'app.customers',
+        'app.dashboard',
         'app.formvalidations',
         'app.highcharts',
         'app.layout',

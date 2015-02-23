@@ -1,6 +1,6 @@
 <!-- Sidebar -->
-<div id="sidebar-wrapper" ng-controller="Sidebar as vm">
-    <ul class="__navi">
+<div id="sidebar-wrapper" ng-controller="Sidebar as vm"  style="border:yellow solid 0px;">
+    <ul class="ar-sidenav">
         <li class="__nlightblue __fade-selection-animation" ng-class="vm.isCurrent(r)"
             ng-repeat="r in vm.navRoutes">
             <a ui-sref="{{r.name}}"

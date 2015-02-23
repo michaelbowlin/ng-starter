@@ -14,8 +14,8 @@
         vm.isBusy = true;
         vm.showSplash = true;
         vm.tagline = {
-            text: 'Created by John Papa',
-            link: 'http://twitter.com/john_papa'
+            text: 'Starter App',
+            link: 'https://github.com/michaelbowlin/ng-starter'
         };
 
         activate();

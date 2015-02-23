@@ -11,8 +11,8 @@
         var readyPromise;
 
         var service = {
-            getCustomer: getCustomer,
             getCustomers: getCustomers,
+            getCustomer: getCustomer,
             getformvalidation: getformvalidation,
             getformvalidations: getformvalidations,
             gethighcharts: gethighcharts,
@@ -21,6 +21,13 @@
 
         return service;
 
+        /*
+        *   
+        *   
+        *   CUSTOMERS
+        *   
+        *   
+        */
         function getCustomer(id) {
             return $http.get('/api/customer/' + id)
                 .then(getCustomerComplete)
@@ -47,6 +54,14 @@
             }
         }
 
+
+        /*
+        *   
+        *   
+        *   HighCharts
+        *   
+        *   
+        */
         function gethighcharts(id) {
             return $http.get('/api/highcharts/' + id)
                 .then(gethighchartsComplete)
@@ -60,6 +75,14 @@
             }
         }
 
+
+        /*
+        *   
+        *   
+        *   FORM VALIDATION
+        *   
+        *   
+        */
         function getformvalidation(id) {
             return $http.get('/api/formvalidation/' + id)
                 .then(getformvalidationComplete)

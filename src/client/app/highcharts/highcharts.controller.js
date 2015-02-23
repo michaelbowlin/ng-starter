@@ -1,5 +1,5 @@
 (function () {
-    'use strict';
+    // 'use strict';
 
     // angular
     //     //.module('app.highcharts')
@@ -28,7 +28,9 @@
         /* @ngInject */
         myapp.controller('highcharts', function ($state, dataservice, logger, $scope) {
 
-        
+
+
+
         //function highcharts($state, dataservice, logger, $scope) {
 
             var vm = this;
