@@ -26,19 +26,18 @@
 
 </head>
 <body>
-    
- 
-            <div ng-include="'app/layout/shell.html'"></div>
-            <div id="splash-page" ng-show="false">
-                <div class="page-splash">
-                    <div class="page-splash-message">
-                        Starter App
-                    </div>
-                    <div class="progress progress-striped active page-progress-bar">
-                        <div class="bar"></div>
-                    </div>
-                </div>
+
+    <div ng-include="'app/layout/shell.html'"></div>
+    <div id="splash-page" ng-show="false">
+        <div class="page-splash">
+            <div class="page-splash-message">
+                Starter App
             </div>
+            <div class="progress progress-striped active page-progress-bar">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- build:js js/lib.js -->
     <!-- bower:js -->
@@ -105,12 +104,5 @@
     <!-- endinject -->
 
     <!-- endbuild -->
-
-    <script>
-        $(".navbar-toggle collapsed").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
 </body>
 </html>
