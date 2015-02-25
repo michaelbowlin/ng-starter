@@ -37,19 +37,27 @@
 
 <!-- Header inject -->
 <div ng-controller="Shell as vm">
-    <nav id="ar-header" class="clearfix navbar navbar-default navbar-fixed-top" style="border:pink solid 0px;">
-        <ht-top-nav title="vm.title" tagline="vm.tagline"></ht-top-nav>
-    </nav>
+
+    <!-- TopNav inject -->
+    <div class="row">
+        <div class="col-xs-12">
+            <nav id="ar-header" class="clearfix navbar navbar-default">
+                <ht-top-nav title="vm.title" tagline="vm.tagline"></ht-top-nav>
+            </nav>       
+        </div>
+    </div>
+
+    <!-- Sidebar inject -->
+    <div ng-include="'app/layout/sidebar.html'"></div>
 
     <div id="wrapper">
                         
         <div id="ar-content" class="row">
             <div class="col-xs-12">
-                <!-- Sidebar inject -->
-                <div ng-include="'app/layout/sidebar.html'" style="border:blue solid 0px;"></div>
+
 
                 <!-- Page Content -->
-                <div id="page-content-wrapper" style="border:red solid 0px;">
+                <div id="page-content-wrapper">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12">

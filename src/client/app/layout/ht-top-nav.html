@@ -1,12 +1,40 @@
 <!-- Brand and toggle get grouped for better mobile display -->
 <div class="navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-    <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <h2><a class="navbar-brand" href="/">{{vm.title}}</a></h2>
+  <!-- right -->
+  <div class="row">
+          <div class="col-xs-8">
+                    <nav-exposeleft></nav-exposeleft>
+                    <a class="navbar-brand" href="/">{{vm.title}}</a>
+          </div>
+
+            <!-- right -->
+           <div id="ar-usernav" class="col-xs-4" >
+              
+               <ul class="nav navbar-nav">
+                    <li><a href="#"><i class="fa fa-tasks"></i> <span class="badge badge-grey">4 </span></a></li>
+                    <li><a href="#"><i class="ace-icon fa fa-bell icon-animated-bell bell"></i> <span class="badge badge-important"> 8</span></a>
+                    <!-- <a href=""><img class="bell" src="http://inspectelement.com/demos/css3/bell/bell.png" alt=""></a> -->
+                    </li>
+                    <li><a href="#"><i class="ace-icon fa fa-envelope icon-animated-vertical"></i> <span class="badge badge-success"> 5</span></a></li>
+                    <li>
+                            <a href="#">
+                                <span class="user-info">
+                                    <small>Welcome,</small>
+                                    CDW
+                                </span>
+                                <img class="nav-user-photo" src="http://0.gravatar.com/avatar/c0061829cdd89f49089d91bd8c0b25ef?s=50&d=blank&r=G" alt="Jason's Photo" />
+<!--                                 <img class="nav-user-photo" src="http://wscont1.apps.microsoft.com/winstore/1x/07d0971e-f9dc-4de1-93de-a93c74d385ca/Icon.57551.png" alt="Jason's Photo" /> -->
+
+
+                                
+
+                            </a>
+                        </li>
+
+                  </ul>
+
+          </div>
+  </div>
 </div>
 
 <!-- Collect the nav links, forms, and other content for toggling -->

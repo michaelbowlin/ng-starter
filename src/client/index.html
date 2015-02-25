@@ -53,8 +53,11 @@
     <script src="/bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
+
+    <!-- Custom Charts -->
     <script src="/src/client/app/highcharts/highcharts.js"></script>
+
     <!-- build:js js/app.js-->
     <!-- inject:js -->
     <script src="/src/client/app/app.module.js"></script>
@@ -92,6 +95,7 @@
     <script src="/src/client/app/layout/ht-top-nav.directive.js"></script>
     <script src="/src/client/app/layout/shell.controller.js"></script>
     <script src="/src/client/app/layout/sidebar.controller.js"></script>
+    <script src="/src/client/app/widgets/directive/nav-mobile-expose-left.directive.js"></script>
     <script src="/src/client/app/widgets/ht-img-person.directive.js"></script>
     <script src="/src/client/app/widgets/ht-widget-header.directive.js"></script>
     <!-- endinject -->
@@ -101,5 +105,12 @@
     <!-- endinject -->
 
     <!-- endbuild -->
+
+    <script>
+        $(".navbar-toggle collapsed").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
 </html>
